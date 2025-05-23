@@ -1,9 +1,5 @@
 #include <ncurses.h>
-
-
-void main_menu();
-void progress();
-
+#include "tui.h"
 
 
 
@@ -32,6 +28,7 @@ void main_menu(){
     mvprintw(8, 8, "-- welcome to the useless DDOS tool --");
     mvprintw(5, 30, "1. ICMP flood");
     mvprintw(6, 30, "2. HTTP flood");
+    mvprintw(7, 30, "3. Quit Program");
     attroff(COLOR_PAIR(2));
 
     refresh();
