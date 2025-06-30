@@ -1,5 +1,6 @@
 #include <ncurses.h>
 #include "tui.h"
+#include "floodicmp.h"
 
 int main(){
     initscr();
@@ -18,7 +19,7 @@ int main(){
         choice=getch();
 
         switch(choice){
-            case '1': /* func ICMP */ break;
+            case '1': launch_attack_ICMP(); break;
             case '2' : /* func HTTP */ break;
             case '3' : break;
         }
